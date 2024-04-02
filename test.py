@@ -1,4 +1,6 @@
-a = '강참치강우협강바보'
+import pandas as pd
 
-if '강우협' in a:
-    print(100)
+df = pd.read_csv('./People_data/강우협_275940033494646785.csv')
+
+df = df['Total_credit'][len(df) -1]
+print(df)
